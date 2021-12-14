@@ -1,4 +1,4 @@
-How To Clone A Private Github Repo To A cPanel Server
+**How To Clone A Private Github Repo To A cPanel Server**
 Git private repository requires SSH access.
 
 So you must ensure that your hosting package has SSH enabled (customers on Web Hosting Magic need not worry as every hosting package comes with SSH access) and perform additional steps in order to successfully clone a privately-hosted remote repository to your cPanel server.
