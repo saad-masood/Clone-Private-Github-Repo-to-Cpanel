@@ -11,7 +11,7 @@ You can also use your local system's Terminal or any tool that allows you to acc
 
 If you have not already configured one, run the following command to generate an SSH key:
 
-    **ssh-keygen -t rsa -b 4096 -C "username@example"**
+    ssh-keygen -t rsa -b 4096 -C "username@example"
 
 In this example, "username" represents the cPanel account username and "example" represents the domain name.
 
@@ -25,7 +25,7 @@ Press Enter to continue.
 
 To confirm that the key exists and is in the correct location, run the following command:
 
-    **cat ~/.ssh/id_rsa.pub**
+    cat ~/.ssh/id_rsa.pub
 
 3. Register Your SSH Key With The Private Repository Host
 
@@ -49,7 +49,7 @@ Click Add key.
 
 To test your SSH key, run the following command.
 
-    **ssh -T git@example.com**
+    ssh -T git@example.com
 
 where example.com represents the private repository's host - e.g ssh -T git@github.com.
 
@@ -57,7 +57,7 @@ where example.com represents the private repository's host - e.g ssh -T git@gith
 
 To clone the repository, run the following command on the cPanel account, where "git clone git@example.com:$name/private-repo.git" represents the private repository's clone URL:
 
-    **git clone git@example.com:$name/private-repo.git**
+    git clone git@example.com:$name/private-repo.git
 
 If you see Error: The WebSocket handshake failed at ... when you access cPanel's Terminal interface (cPanel >> Home >> Advanced >> Terminal), recheck your connect.
 
